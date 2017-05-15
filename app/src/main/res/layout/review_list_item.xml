@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?><!-- A CardView that contains a Views for Single Movie Item -->
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_content"
+    style="@style/FullWidthLayout"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/basic_view_padding"
+    card_view:cardCornerRadius="@dimen/cardView_corner_radius">
+
+    <RelativeLayout
+
+        style="@style/MatchParentLayout">
+
+        <TextView
+            android:id="@+id/title_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="5dp"
+            android:text="@string/title_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_review_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/title_label"
+            android:padding="5dp"
+            android:text="@string/title_text" />
+
+        <TextView
+            android:id="@+id/review_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_review_title"
+            android:padding="5dp"
+            android:text="@string/review_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_review_title"
+            android:layout_toRightOf="@+id/review_label"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:padding="5dp"
+            android:text="@string/review_text" />
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            style="@style/WrapContentLayout"
+            android:layout_below="@+id/tv_review"
+            android:numStars="5"
+            android:isIndicator="true"
+            android:stepSize="0.3"
+            android:theme="@style/RatingBar" />
+
+        <TextView
+            android:id="@+id/reviewer_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/review_date_label"
+            android:padding="5dp"
+            android:text="@string/reviewer_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_reviewer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/review_date_label"
+            android:layout_toRightOf="@+id/reviewer_name_label"
+            android:padding="5dp"
+            android:text="@string/reviewer_text" />
+
+        <TextView
+            android:id="@+id/review_date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating_bar"
+            android:padding="5dp"
+            android:text="@string/review_date_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_review_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating_bar"
+            android:layout_toRightOf="@+id/review_date_label"
+            android:padding="5dp"
+            android:text="@string/reviewer_text" />
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+

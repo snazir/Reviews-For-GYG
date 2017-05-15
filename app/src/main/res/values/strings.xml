@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Reviews</string>
+    <string name="text_empty_reviews">No Review Available</string>
+    <string name="error_from_server">Refresh List again</string>
+    <string name="error_loading_reviews">Oops, something went wrong</string>
+    <string name="title_text">Title :</string>
+    <string name="review_text">Review:</string>
+    <string name="reviewer_text">Reviewed By:</string>
+    <string name="review_date_text">Review Date:</string>
+</resources>
